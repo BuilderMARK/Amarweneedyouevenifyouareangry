@@ -1,11 +1,13 @@
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Catalogue
 {
 
-
-
-
         private static Catalogue instance;
         private static Lock lock = new ReentrantLock();
+
+
 
         public static Catalogue getInstance() {
 
@@ -17,9 +19,6 @@ public class Catalogue
             }
             return instance;
         }
-
-
-
 
 
 }
